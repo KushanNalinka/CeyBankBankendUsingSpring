@@ -16,7 +16,7 @@ services:
       - "3306:3306"                         # open only if remote DB access needed
 
   app:
-    image: ghcr.io/<YOUR_GH_USER>/ceybank:latest
+    image: ghcr.io/kushannalinka/ceybank:latest
     container_name: ceybank_app
     restart: unless-stopped
     depends_on: [mysql]
