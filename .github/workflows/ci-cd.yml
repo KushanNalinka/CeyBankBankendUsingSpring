@@ -23,7 +23,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/kushannalinka/ceybank:latest
+        tags: docker.io/kushan572/ceybank:latest
       env:
         DOCKER_BUILDKIT: 1
         DOCKER_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
