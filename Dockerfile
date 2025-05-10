@@ -5,7 +5,7 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn -B clean package -DskipTests
 
-# ---------- run stage ----------
+# ---------- run stage ----
 FROM amazoncorretto:17-alpine
 WORKDIR /app
 COPY --from=build /app/target/ceybank-0.0.1-SNAPSHOT.jar app.jar
